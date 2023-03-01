@@ -44,8 +44,8 @@ export const TestimonialSlider = () => {
     return (
         <div>
             <div className="mb-[40px] space-x-10">
-                <button className={`rounded-full text-[#0D1259] bg-white ${isBeginning && `text-white`} ${isBeginning && `bg-[#515ae5]`} border border-[#1090D2] p-[16px]`} onClick={() => swiperRef.current?.slidePrev()} disabled={isBeginning}><TfiAngleLeft /></button>
-                <button className={`rounded-full text-[#0D1259] bg-white ${isEnd && `text-white`} ${isEnd && `bg-[#515ae5]`} border border-[#1090D2] p-[16px]`} onClick={() => swiperRef.current?.slideNext()} disabled={isEnd}><TfiAngleRight /></button>
+                <button className={`rounded-full text-[#0D1259] bg-white ${isBeginning && `text-white`} ${isBeginning && `bg-[#434de0]`} border border-[#1090D2] p-[16px]`} onClick={() => swiperRef.current?.slidePrev()} disabled={isBeginning}><TfiAngleLeft /></button>
+                <button className={`rounded-full text-[#0D1259] bg-white ${isEnd && `text-white`} ${isEnd && `bg-[#434de0]`} border border-[#1090D2] p-[16px]`} onClick={() => swiperRef.current?.slideNext()} disabled={isEnd}><TfiAngleRight /></button>
             </div>
             <Swiper
                 slidesPerView={3}
