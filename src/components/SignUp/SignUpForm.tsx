@@ -69,7 +69,7 @@ export const SignUpForm: React.FC = () => {
                                 <Form>
                                     <div>
                                         <div className="label mb-[8px]">
-                                            <label className="xl:max-w-[60px] font-[500] md:text-left text-[12px] leading-[20px] text-[#0D1259] flex" htmlFor="full-name">Full name</label>
+                                            <label className="xl:max-w-[60px] font-[500] md:text-left text-[12px] leading-[20px] text-[#0D1259] md:flex" htmlFor="full-name">Full name</label>
                                         </div>
                                         <input
                                             type="text"
@@ -83,7 +83,7 @@ export const SignUpForm: React.FC = () => {
                                     </div>
                                     <div>
                                         <div className="label mb-[8px]">
-                                            <label className="xl:max-w-[100px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] flex" htmlFor="email">Email address</label>
+                                            <label className="xl:max-w-[100px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] md:flex" htmlFor="email">Email address</label>
                                         </div>
                                         <input
                                             type="email"
@@ -97,7 +97,7 @@ export const SignUpForm: React.FC = () => {
                                     </div>
                                     <div>
                                         <div className="label mb-[8px]">
-                                            <label className="xl:max-w-[120px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] flex" htmlFor="phone-number">Phone number</label>
+                                            <label className="xl:max-w-[120px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] md:flex" htmlFor="phone-number">Phone number</label>
                                         </div>
                                         <input
                                             type="text"
@@ -111,7 +111,7 @@ export const SignUpForm: React.FC = () => {
                                     </div>
                                     <div>
                                         <div className="label mb-[8px]">
-                                            <label className="xl:max-w-[120px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] flex" htmlFor="full-name">Your password</label>
+                                            <label className="xl:max-w-[120px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] md:flex" htmlFor="full-name">Your password</label>
                                         </div>
                                         <input
                                             type="text"
