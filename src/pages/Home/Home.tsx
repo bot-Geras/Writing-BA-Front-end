@@ -9,6 +9,7 @@ import { Services } from "../../components"
 import { Testimonial } from "../../components"
 import { Subscribe } from "../../components"
 import { Footer } from "../../components"
+import { BackToTop } from "../../components";
 
 export const Home = () => {
     Aos.init({
@@ -24,6 +25,7 @@ export const Home = () => {
             <Testimonial />
             <Subscribe />
             <Footer />
+            <BackToTop />
         </main>
     )
 }

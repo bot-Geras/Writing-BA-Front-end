@@ -6,6 +6,7 @@ import { Services } from "./LandingPage";
 import { Testimonial } from "./LandingPage";
 import { Subscribe } from "./LandingPage";
 import { Footer } from "./LandingPage";
+import { BackToTop } from "./LandingPage";
 
 export { 
     NavComponent,
@@ -16,4 +17,5 @@ export {
     Testimonial,
     Subscribe,
     Footer,
+    BackToTop,
 }

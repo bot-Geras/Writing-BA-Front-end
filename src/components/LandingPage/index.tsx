@@ -4,5 +4,14 @@ import { Services } from "./Services";
 import { Testimonial } from "./Testimonial";
 import { Subscribe } from "./Subscribe";
 import { Footer } from "./Footer";
+import { BackToTop } from "./BackToTopButton";
 
-export { Hero, AboutSection, Services, Testimonial, Subscribe, Footer }
+export {
+    Hero,
+    AboutSection,
+    Services,
+    Testimonial,
+    Subscribe,
+    Footer,
+    BackToTop,
+};
