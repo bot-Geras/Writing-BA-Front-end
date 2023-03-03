@@ -1,36 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 @layer base {
-    body {
-        @apply bg-no-repeat font-poppins;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        @apply font-poppins;
-    }
-    .btn {
-        @apply transition;
-    }
-    .btn-primary {
-        @apply bg-accent-primary
-    }
-    .h1 {
-        @apply xl:text-[80px] font-bold leading-[1.1];
-    }
-    .h2 {
-        @apply text-[40px] font-bold leading-tight;
-    }
-    .h3 {
-        @apply text-[24px];
-    }
-    .lead {
-        @apply text-lg text-secondary font-secondary font-medium leading-relaxed;
-    }
+  body {
+    @apply bg-no-repeat font-poppins;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-poppins;
+  }
+  .btn {
+    @apply transition;
+  }
+  .btn-primary {
+    @apply bg-accent-primary;
+  }
+  .h1 {
+    @apply xl:text-[80px] font-bold leading-[1.1];
+  }
+  .h2 {
+    @apply text-[40px] font-bold leading-tight;
+  }
+  .h3 {
+    @apply text-[24px];
+  }
+  .lead {
+    @apply text-lg text-secondary font-secondary font-medium leading-relaxed;
+  }
 }
