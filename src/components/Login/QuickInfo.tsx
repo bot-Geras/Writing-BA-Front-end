@@ -4,21 +4,21 @@ export const QuickInfo = () => {
   const { infos } = aboutData;
   return (
     <div
-      className=" hidden xl:flex h-screen  items-center w-[35%] mr-auto ml-0 bg-[#515AE5]"
+      className="h-full invisible lg:visible bg-[#515AE5]"
       data-aos-offset="350"
     >
       <div
-        className="mt-10 mx-auto h-[70%] w-[60%] text-white text-lg text-left"
+        className="lg:pt-[130px] lg:pb-[270px] lg:pl-[72px] lg:pr-[70px]"
         data-aos="fade-up"
       >
         {infos.map((info, index) => {
           return (
-            <div key={index} className="mt-10">
-              <p className="flex items-center">
-                <img className="w-6 h-4" src={info.img} alt="image" />
-                <span className="ml-5">{info.text}</span>
-              </p>
-            </div>
+            <ul key={index}>
+              <li className="flex pt-[32px] items-center">
+                <img className="" src={info.img} alt="image" />
+                <p className="xl:max-w-[500px] ml-[18px] text-left font-[400] text-[18px] text-white leading-[24px]">{info.text}</p>
+              </li>
+            </ul>
           );
         })}
       </div>
