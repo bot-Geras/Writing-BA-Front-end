@@ -69,7 +69,7 @@ export const LoginForm: React.FC = () => {
                     <div className=" md:flex md:flex-col">
                       <div className="mb-2 l">
                         <label
-                          className="xl:max-w-[90px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259]"
+                          className="xl:max-w-[90px] font-[500] text-left md:flex text-[12px] leading-[20px] text-[#0D1259]"
                           htmlFor="e-mail"
                         >
                           Email address
@@ -90,7 +90,7 @@ export const LoginForm: React.FC = () => {
                     <div className=" mt-5 md:flex md:flex-col">
                       <div className="mb-2">
                         <label
-                          className="xl:max-w-[60px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259]"
+                          className="xl:max-w-[60px] font-[500] md:flex text-left text-[12px] leading-[20px] text-[#0D1259]"
                           htmlFor="password"
                         >
                           Password
