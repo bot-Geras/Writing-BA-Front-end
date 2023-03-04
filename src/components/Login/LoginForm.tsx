@@ -49,7 +49,7 @@ export const LoginForm: React.FC = () => {
             {/*form */}
             <Formik
               initialValues={initialValues}
-              onSubmit={(values: FormValues) => { }}
+              onSubmit={(values: FormValues) => {}}
               validationSchema={Yup.object().shape({
                 email: Yup.string().email().required("Enter your email"),
                 password: Yup.string().required("Enter your password"),
@@ -113,24 +113,29 @@ export const LoginForm: React.FC = () => {
                     >
                       <Link to="/">Forgot password</Link>
                     </div>
-                    <div className="md:text-left mt-6 md:flex md:items-center" data-aos="fade-up">
-                      <p className="xl:max-w-[191px] font-[400] text-[16px] leading-[24px] text-[#0D1259]">Don't have an account?</p>
+                    <div
+                      className="md:text-left mt-6 md:flex md:items-center"
+                      data-aos="fade-up"
+                    >
+                      <p className="xl:max-w-[191px] font-[400] text-[16px] leading-[24px] text-[#0D1259]">
+                        Don't have an account?
+                      </p>
                       <Link className="ml-2 mt-1 text-[#515AE5]" to="/signup">
                         Sign up
                       </Link>
                     </div>
                     <div
-                      className="mt-[24px] block md:flex md:items-center md:justify-between"
+                      className="mt-[24px] flex flex-col items-center md:items-start"
                       data-aos="fade-up"
                     >
                       <Link
                         to="/"
-                        className="py-[12px] px-[24px] rounded-[5px] text-[18px] leading-[24px] bg-[#515AE5] text-white font-[700]"
+                        className="py-[12px] px-[24px] rounded-[5px] text-[18px] leading-[24px] bg-[#515AE5] text-white font-[700] max-w-[250px] md:"
                       >
                         Proceed to Payment
                       </Link>
                       <Link
-                        className="mt-8 text-[#515AE5] hover:underline"
+                        className="mt-8 text-[#515AE5] hover:underline md:text-start"
                         to="/"
                       >
                         Cancel
@@ -142,38 +147,6 @@ export const LoginForm: React.FC = () => {
             </Formik>
             {/* end of form */}
           </div>
- login_page
-          <div
-            className="text-left mt-6 text-[#515AE5] hover:underline"
-            data-aos="fade-up"
-          >
-            <Link to="">Forgot password</Link>
-          </div>
-          <div className="text-left mt-6" data-aos="fade-up">
-            <p>Don't have an account?</p>
-            <Link className=" mt-1 text-[#515AE5] hover:underline" to="">
-              Sign up
-            </Link>
-          </div>
-          <div
-            className=" mt-14 flex flex-col md:flex md:flex-row justify-between xl:w-[70%]"
-            data-aos="fade-up"
-          >
-            <Link
-              to=""
-              className="p-4 rounded bg-[#515AE5] text-white font-[500] max-w-[200px]"
-            >
-              Proceed to payment
-            </Link>
-            <Link
-              className="mt-8 text-start text-[#515AE5] hover:underline"
-              to=""
-            >
-              Cancel
-            </Link>
-          </div>
-
- master
         </div>
       </div>
     </div>
