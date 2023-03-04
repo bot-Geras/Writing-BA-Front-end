@@ -142,6 +142,38 @@ export const LoginForm: React.FC = () => {
             </Formik>
             {/* end of form */}
           </div>
+ login_page
+          <div
+            className="text-left mt-6 text-[#515AE5] hover:underline"
+            data-aos="fade-up"
+          >
+            <Link to="">Forgot password</Link>
+          </div>
+          <div className="text-left mt-6" data-aos="fade-up">
+            <p>Don't have an account?</p>
+            <Link className=" mt-1 text-[#515AE5] hover:underline" to="">
+              Sign up
+            </Link>
+          </div>
+          <div
+            className=" mt-14 flex flex-col md:flex md:flex-row justify-between xl:w-[70%]"
+            data-aos="fade-up"
+          >
+            <Link
+              to=""
+              className="p-4 rounded bg-[#515AE5] text-white font-[500] max-w-[200px]"
+            >
+              Proceed to payment
+            </Link>
+            <Link
+              className="mt-8 text-start text-[#515AE5] hover:underline"
+              to=""
+            >
+              Cancel
+            </Link>
+          </div>
+
+ master
         </div>
       </div>
     </div>
