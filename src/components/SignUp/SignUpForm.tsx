@@ -125,7 +125,7 @@ export const SignUpForm: React.FC = () => {
                                     </div>
                                     <div className="md:flex md:items-center mb-[24px]" data-aos="fade-up">
                                         <p className="xl:max-w-[211px] font-[400] text-[16px] leading-[24px] text-[#0D1259]">Already have an account?</p>
-                                        <Link className="ml-2 xl:max-w-[43px] font-[400] text-[16px] leading-[24px] text-[#515AE5]" to="/">Login</Link>
+                                        <Link className="ml-2 xl:max-w-[43px] font-[400] text-[16px] leading-[24px] text-[#515AE5]" to="/login">Login</Link>
                                     </div>
                                     <div className="md:flex md:items-center md:justify-between" data-aos="fade-up">
                                     <button className="rounded-[5px] bg-[#515AE5] text-white py-[12px] px-[24px] font-[700] text-[18px] leading-[24px]" type="submit">Proceed to Payment</button>

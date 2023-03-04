@@ -14,7 +14,6 @@ import { Link } from "react-router-dom";
 
 interface FormValues {
   email: string;
-
   password: string;
   created_at: string;
 }
@@ -68,7 +67,7 @@ export const LoginForm: React.FC = () => {
                 return (
                   <Form>
                     <div className=" md:flex md:flex-col">
-                      <div className="mb-5 l">
+                      <div className="mb-2 l">
                         <label
                           className="xl:max-w-[90px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] flex"
                           htmlFor="e-mail"
@@ -80,7 +79,7 @@ export const LoginForm: React.FC = () => {
                       <input
                         id="e-mail"
                         placeholder="   Enter Email address"
-                        className=" flex  h-12 w-full xl:w-[70%] bg-white border border-[#C4C4C4] text-slate-600  placeholder-[#C4C4C4] rounded-[5px]"
+                        className="py-[8px] px-[16px] text-left w-64 md:w-[386px] bg-white border border-[#C4C4C4] text-slate-600  placeholder-[#C4C4C4] rounded-[5px]"
                         onChange={handleChange}
                         onBlur={handleBlur}
                       />
@@ -89,7 +88,7 @@ export const LoginForm: React.FC = () => {
                       <p className="text-red-500">{errors.email}</p>
                     )}
                     <div className=" mt-5 md:flex md:flex-col">
-                      <div className="mb-5">
+                      <div className="mb-2">
                         <label
                           className="xl:max-w-[60px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] flex"
                           htmlFor="password"
@@ -100,7 +99,7 @@ export const LoginForm: React.FC = () => {
                       <input
                         id="password"
                         placeholder="   Enter Password"
-                        className=" h-12 w-full xl:w-[70%] bg-white border border-[#C4C4C4] text-slate-600  placeholder-[#C4C4C4] rounded-[5px] "
+                        className="py-[8px] px-[16px] w-64 md:w-[386px] bg-white border border-[#C4C4C4] text-slate-600  placeholder-[#C4C4C4] rounded-[5px] "
                         onChange={handleChange}
                         onBlur={handleBlur}
                       />
@@ -120,25 +119,25 @@ export const LoginForm: React.FC = () => {
           >
             <Link to="">Forgot password</Link>
           </div>
-          <div className="text-left mt-6" data-aos="fade-up">
-            <p>Don't have an account?</p>
-            <Link className=" mt-1 text-[#515AE5] hover:underline" to="">
+          <div className="text-left mt-6 md:flex md:items-center" data-aos="fade-up">
+            <p className="xl:max-w-[191px] font-[400] text-[16px] leading-[24px] text-[#0D1259]">Don't have an account?</p>
+            <Link className="ml-2 mt-1 text-[#515AE5]" to="/signup">
               Sign up
             </Link>
           </div>
           <div
-            className=" mt-14 flex flex-col md:flex md:flex-row justify-between xl:w-[70%]"
+            className=" mt-14 md:flex md:items-center md:justify-between"
             data-aos="fade-up"
           >
             <Link
-              to=""
-              className="p-4 rounded bg-[#515AE5] text-white font-[500]"
+              to="/"
+              className="py-[12px] px-[24px] rounded text-[18px] leading-[24px] bg-[#515AE5] text-white font-[700]"
             >
               Proceed to payment
             </Link>
             <Link
               className="mt-8 text-start text-[#515AE5] hover:underline"
-              to=""
+              to="/"
             >
               Cancel
             </Link>
