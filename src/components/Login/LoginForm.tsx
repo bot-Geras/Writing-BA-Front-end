@@ -132,7 +132,7 @@ export const LoginForm: React.FC = () => {
           >
             <Link
               to=""
-              className="p-4 rounded bg-[#515AE5] text-white font-[500]"
+              className="p-4 rounded bg-[#515AE5] text-white font-[500] max-w-[200px]"
             >
               Proceed to payment
             </Link>
