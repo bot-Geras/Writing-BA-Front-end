@@ -69,7 +69,7 @@ export const SignUpForm: React.FC = () => {
                                 <Form>
                                     <div>
                                         <div className="label mb-[8px]">
-                                            <label className="xl:max-w-[60px] font-[500] md:text-left text-[12px] leading-[20px] text-[#0D1259] flex" htmlFor="full-name">Full name</label>
+                                            <label className="xl:max-w-[60px] font-[500] md:text-left text-[12px] leading-[20px] text-[#0D1259] md:flex" htmlFor="full-name">Full name</label>
                                         </div>
                                         <input
                                             type="text"
@@ -83,7 +83,7 @@ export const SignUpForm: React.FC = () => {
                                     </div>
                                     <div>
                                         <div className="label mb-[8px]">
-                                            <label className="xl:max-w-[100px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] flex" htmlFor="email">Email address</label>
+                                            <label className="xl:max-w-[100px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] md:flex" htmlFor="email">Email address</label>
                                         </div>
                                         <input
                                             type="email"
@@ -97,7 +97,7 @@ export const SignUpForm: React.FC = () => {
                                     </div>
                                     <div>
                                         <div className="label mb-[8px]">
-                                            <label className="xl:max-w-[120px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] flex" htmlFor="phone-number">Phone number</label>
+                                            <label className="xl:max-w-[120px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] md:flex" htmlFor="phone-number">Phone number</label>
                                         </div>
                                         <input
                                             type="text"
@@ -111,7 +111,7 @@ export const SignUpForm: React.FC = () => {
                                     </div>
                                     <div>
                                         <div className="label mb-[8px]">
-                                            <label className="xl:max-w-[120px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] flex" htmlFor="full-name">Your password</label>
+                                            <label className="xl:max-w-[120px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] md:flex" htmlFor="full-name">Your password</label>
                                         </div>
                                         <input
                                             type="text"
@@ -125,11 +125,11 @@ export const SignUpForm: React.FC = () => {
                                     </div>
                                     <div className="md:flex md:items-center mb-[24px]" data-aos="fade-up">
                                         <p className="xl:max-w-[211px] font-[400] text-[16px] leading-[24px] text-[#0D1259]">Already have an account?</p>
-                                        <Link className="ml-2 xl:max-w-[43px] font-[400] text-[16px] leading-[24px] text-[#515AE5]" to="/">Login</Link>
+                                        <Link className="ml-2 xl:max-w-[43px] font-[400] text-[16px] leading-[24px] text-[#515AE5]" to="/login">Login</Link>
                                     </div>
                                     <div className="md:flex md:items-center md:justify-between" data-aos="fade-up">
-                                    <button className="rounded-[5px] bg-[#515AE5] text-white py-[12px] px-[24px] font-[700] text-[18px] leading-[24px]" type="submit">Proceed to Payment</button>
-                                    <p className="underline font-[400] text-[12px] leading-[18px] text-[#515AE5]">Cancel</p>
+                                    <Link to="/" className="rounded-[5px] bg-[#515AE5] text-white py-[12px] px-[24px] font-[700] text-[18px] leading-[24px]" type="submit">Proceed to Payment</Link>
+                                    <Link to="/" className="underline font-[400] text-[12px] leading-[18px] text-[#515AE5]">Cancel</Link>
                                     </div>
                                 </Form>
                         </div>
