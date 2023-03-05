@@ -1,9 +1,10 @@
-import React from "react";
+
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
 import { NoMatch } from "./pages/Error/NoMatch";
 import { Signup } from "./pages/Signup/Signup";
 import { Login } from "./pages/Login/Login";
+import { PaymentDetails } from "./pages/PaymentDetails/PaymentDetails";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="*" element={<NoMatch />} />
 
         <Route path="/login" element={<Login />} />
+        <Route path="/payment" element={<PaymentDetails />} />
       </Routes>
     </div>
   );
