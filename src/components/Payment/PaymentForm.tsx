@@ -9,7 +9,7 @@ interface PaymentFormValues {
   cardYear: string;
   cvv: string;
 }
-const CardDetails: React.FC = () => {
+const PaymentForm: React.FC = () => {
   const initialValues: PaymentFormValues = {
     cardName: "",
     cardNumber: "",
@@ -190,4 +190,4 @@ const CardDetails: React.FC = () => {
   );
 };
 
-export default CardDetails;
+export default PaymentForm;
