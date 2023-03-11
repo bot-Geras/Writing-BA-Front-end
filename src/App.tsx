@@ -4,7 +4,7 @@ import { Home } from "./pages/Home/Home";
 import { NoMatch } from "./pages/Error/NoMatch";
 import { Signup } from "./pages/Signup/Signup";
 import { Login } from "./pages/Login/Login";
-import { PaymentDetails } from "./pages/PaymentDetails/PaymentDetails";
+import { PaymentDetails } from "./pages/Payment/PaymentDetails";
 import "./App.css";
 
 function App() {

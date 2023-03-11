@@ -1,38 +1,49 @@
 import React from "react";
 import logo from "../../assets/images/wbaLogo.png";
-import { Formik, FormikProps, Form } from "formik";
+import { Formik, FormikProps, Form, Field } from "formik";
 import { object, string } from "yup";
+import { useNavigate } from "react-router-dom";
 interface PaymentFormValues {
   cardName: string;
   cardNumber: string;
   cardMonth: string;
   cardYear: string;
   cvv: string;
+  checked: string[];
 }
-const CardDetails: React.FC = () => {
+const PaymentForm: React.FC = () => {
   const initialValues: PaymentFormValues = {
     cardName: "",
     cardNumber: "",
     cardMonth: "",
     cardYear: "",
     cvv: "",
+    checked: [],
+  };
+  const navigate = useNavigate();
+  const goBackToSignIn = (): void => {
+    navigate(`/signup`);
   };
 
   return (
-    <div
-      // className="flex items-center mx-auto h-screen w-4/5 xl:w-[90%] xl:ml-auto xl:mr-0"
-      className="h-screen w-4/5 xl:w-[40%] xl:ml-auto "
-    >
-      <div className="container relative">
+    <div className=" flex items-center h-screen w-4/5 mx-auto  xl:w-[40%] xl:ml-auto xl:mr-0">
+      <div className="container  w-[386px]">
         <div>
           {/* logo */}
-          <img
+          <div
+            className="flex items-center justify-between mb-[30px] "
             data-aos="fade-down"
-            className="mb-[50px]"
-            src={logo}
-            alt="logo"
-          />
-          <div className="">
+          >
+            <img className="" src={logo} alt="logo" />
+            <p
+              className=" font-bold text-lg leading-6 text-[#515AE5] cursor-pointer"
+              onClick={goBackToSignIn}
+            >
+              Cancel
+            </p>
+          </div>
+
+          <div className="flex flex-col items-start">
             <h2
               className="xl:max-w-[223px] md:text-left mb-[16px] font-[700] text-5xl md:text-[56px] md:leading-[64px] text-[#0D1259]"
               data-aos="fade-up"
@@ -83,7 +94,7 @@ const CardDetails: React.FC = () => {
                     <input
                       id="card-name"
                       placeholder=" Enter Card name"
-                      className="bg-white h-10 mb-[24px] border border-[#C4C4C4] text-slate-600 w-64 md:w-[386px] placeholder-[#C4C4C4] rounded-[5px]"
+                      className="bg-white h-10 border border-[#C4C4C4] text-slate-600 w-64 md:w-[386px] placeholder-[#C4C4C4] rounded-[5px]"
                       onBlur={handleBlur}
                     />
                   </div>
@@ -92,8 +103,8 @@ const CardDetails: React.FC = () => {
                     <p className="text-red-500">{errors.cardName}</p>
                   )}
 
-                  <div className=" mt-5 md:flex md:flex-col">
-                    <div className="mb-5">
+                  <div className=" mt-5 flex flex-col">
+                    <div className="">
                       <label
                         className="xl:max-w-[90px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] flex"
                         htmlFor="card-number"
@@ -104,7 +115,7 @@ const CardDetails: React.FC = () => {
                     <input
                       id="card-number"
                       placeholder=" Enter Card Number"
-                      className="bg-white h-10 mb-[24px] border border-[#C4C4C4] text-slate-600 w-64 md:w-[386px] placeholder-[#C4C4C4] rounded-[5px]"
+                      className="bg-white h-10  border border-[#C4C4C4] text-slate-600 w-64 md:w-[386px] placeholder-[#C4C4C4] rounded-[5px]"
                       onChange={handleChange}
                       onBlur={handleBlur}
                     />
@@ -113,8 +124,8 @@ const CardDetails: React.FC = () => {
                     )}
                   </div>
 
-                  <div className="mt-5 flex flex-col md:justify-between  md:flex-row  ">
-                    <div className="flex flex-col items-start">
+                  <div className="mt-5 flex flex-col md:justify-between  md:flex-row xl:w-[386px]  ">
+                    <div className="flex flex-col items-start mb-4">
                       <label
                         htmlFor="code"
                         className="font-[500]  text-left text-[12px] leading-[20px] text-[#0D1259]"
@@ -126,11 +137,11 @@ const CardDetails: React.FC = () => {
                         placeholder=" CVV"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        className="h-12 xl:max-w-[50px]   bg-white border border-[#C4C4C4] text-slate-600  placeholder-[#C4C4C4] rounded-[5px]"
+                        className="h-12  w-[50px]   bg-white border border-[#C4C4C4] text-slate-600  placeholder-[#C4C4C4] rounded-[5px]"
                       />
                     </div>
 
-                    <div className="flex flex-col justify-between">
+                    <div className="flex flex-col justify-between mb-4 ">
                       <label className=" font-[500] text-left text-[12px] leading-[20px] text-[#0D1259]">
                         Expiration Date
                       </label>
@@ -165,9 +176,19 @@ const CardDetails: React.FC = () => {
                   {touched.cvv && errors.cvv && (
                     <p className="text-red-500">{errors.cvv}</p>
                   )}
+                  <div className="md:flex md:mt-6 md:flex-col items-start md:gap-5">
+                    <label className="flex items-center gap-2 mb-2">
+                      <Field type="checkbox" name="checked" />
+                      Save card
+                    </label>
+                    <p className="xl:max-w-[25em]  text-left font-[400] text-[16px] leading-[24px] text-[#0D1259]">
+                      By completing your purchase you agree to these Terms and
+                      conditions
+                    </p>
+                  </div>
 
                   <div
-                    className="mt-5 flex flex-col gap-5 md:flex-row md:justify-between md:items-center"
+                    className="mt-5 flex flex-col gap-5 md:flex-row md:justify-between md:items-center xl:w-[386px]"
                     data-aos="fade-up"
                   >
                     <button
@@ -190,4 +211,4 @@ const CardDetails: React.FC = () => {
   );
 };
 
-export default CardDetails;
+export default PaymentForm;
