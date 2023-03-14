@@ -26,12 +26,12 @@ const PaymentForm: React.FC = () => {
   };
 
   return (
-    <div className=" flex items-center h-screen w-4/5 mx-auto  xl:w-[40%] xl:ml-auto xl:mr-0">
-      <div className="container  w-[386px]">
+    <div className="mt-20 flex flex-col justify-center  items-center h-screen w-4/5 md:my-auto   xl:w-[40%] xl:mx-0">
+      <div className="container w-[386px] ">
         <div>
           {/* logo */}
           <div
-            className="flex items-center justify-between mb-[30px] "
+            className="mt-20 flex items-center justify-between md:items-center  md:justify-between mb-[30px] "
             data-aos="fade-down"
           >
             <img className="" src={logo} alt="logo" />
@@ -43,7 +43,7 @@ const PaymentForm: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-center md:items-start">
             <h2
               className="xl:max-w-[223px] md:text-left mb-[16px] font-[700] text-5xl md:text-[56px] md:leading-[64px] text-[#0D1259]"
               data-aos="fade-up"
@@ -80,9 +80,9 @@ const PaymentForm: React.FC = () => {
                 isSubmitting,
               } = props;
               return (
-                <Form>
+                <Form className="flex flex-col items-center md:items-start">
                   <div className="flex flex-col">
-                    <div className="">
+                    <div className="flex justify-center md:justify-start">
                       <label
                         className="xl:max-w-[90px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] flex"
                         htmlFor="card-name"
@@ -104,7 +104,7 @@ const PaymentForm: React.FC = () => {
                   )}
 
                   <div className=" mt-5 flex flex-col">
-                    <div className="">
+                    <div className="flex justify-center md:justify-start">
                       <label
                         className="xl:max-w-[90px] font-[500] text-left text-[12px] leading-[20px] text-[#0D1259] flex"
                         htmlFor="card-number"
@@ -124,25 +124,27 @@ const PaymentForm: React.FC = () => {
                     )}
                   </div>
 
-                  <div className="mt-5 flex flex-col md:justify-between  md:flex-row xl:w-[386px]  ">
-                    <div className="flex flex-col items-start mb-4">
-                      <label
-                        htmlFor="code"
-                        className="font-[500]  text-left text-[12px] leading-[20px] text-[#0D1259]"
-                      >
-                        Security code
-                      </label>
+                  <div className="mt-5 flex flex-col items-center md:justify-between  md:flex-row xl:w-[386px]  ">
+                    <div className="flex flex-col items-center md:items-start mb-4 order-last md:order-first">
+                      <div className="flex justify-center md:justify-start">
+                        <label
+                          htmlFor="code"
+                          className="font-[500]  text-left text-[12px] leading-[20px] text-[#0D1259]"
+                        >
+                          Security code
+                        </label>
+                      </div>
                       <input
                         id="code"
                         placeholder=" CVV"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        className="h-12  w-[50px]   bg-white border border-[#C4C4C4] text-slate-600  placeholder-[#C4C4C4] rounded-[5px]"
+                        className="h-12  w-[55px] text-center  bg-white border border-[#C4C4C4] text-slate-600  placeholder-[#C4C4C4] rounded-[5px]"
                       />
                     </div>
 
                     <div className="flex flex-col justify-between mb-4 ">
-                      <label className=" font-[500] text-left text-[12px] leading-[20px] text-[#0D1259]">
+                      <label className=" font-[500] text-center md:text-left text-[12px] leading-[20px] text-[#0D1259]">
                         Expiration Date
                       </label>
                       <div className="flex gap-2 ">
@@ -176,12 +178,12 @@ const PaymentForm: React.FC = () => {
                   {touched.cvv && errors.cvv && (
                     <p className="text-red-500">{errors.cvv}</p>
                   )}
-                  <div className="md:flex md:mt-6 md:flex-col items-start md:gap-5">
-                    <label className="flex items-center gap-2 mb-2">
+                  <div className="flex flex-col md:flex md:mt-6 md:flex-col items-center md:items-start md:gap-5">
+                    <label className="flex items-center gap-2 mb-2 order-last md:order-first">
                       <Field type="checkbox" name="checked" />
                       Save card
                     </label>
-                    <p className="xl:max-w-[25em]  text-left font-[400] text-[16px] leading-[24px] text-[#0D1259]">
+                    <p className="xl:max-w-[25em] text-center  md:text-left font-[400] text-[16px] leading-[24px] text-[#0D1259]">
                       By completing your purchase you agree to these Terms and
                       conditions
                     </p>
