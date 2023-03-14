@@ -129,7 +129,7 @@ export const LoginForm: React.FC = () => {
                       data-aos="fade-up"
                     >
                       <Link
-                        to="/"
+                        to="/payment"
                         className="py-[12px] px-[24px] rounded-[5px] text-[18px] leading-[24px] bg-[#515AE5] text-white font-[700] max-w-[250px] md:"
                       >
                         Proceed to Payment
