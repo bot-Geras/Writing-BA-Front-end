@@ -6,6 +6,7 @@ import { Signup } from "./pages/Signup/Signup";
 import { Login } from "./pages/Login/Login";
 import { PaymentDetails } from "./pages/Payment/PaymentDetails";
 import "./App.css";
+import { ForgotPassword } from "./pages/forgot.password/ForgotPassword";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/payment" element={<PaymentDetails />} />
+        <Route path="/password" element={<ForgotPassword />} />
       </Routes>
     </div>
   );
