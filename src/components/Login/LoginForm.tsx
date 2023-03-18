@@ -111,7 +111,7 @@ export const LoginForm: React.FC = () => {
                       className="md:text-left mt-6 text-[#515AE5] hover:underline"
                       data-aos="fade-up"
                     >
-                      <Link to="/">Forgot password</Link>
+                      <Link to="/password">Forgot password</Link>
                     </div>
                     <div
                       className="md:text-left mt-6 md:flex md:items-center"
