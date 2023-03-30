@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import InstructSignUpForm from '../../components/InstructorSignUp/InstructSignUpForm';
+import InstructorSignUpForm from '../../components/InstructorSignUp/InstructorSignUpForm';
 import Banner from '../../assets/images/InstructSignUp'
 import './InstructorSignUp.css'
 
@@ -36,7 +36,7 @@ const InstructorSignUp = () => {
   return (
     <div className='form-container'>
         <img src={Banner} alt="" />
-        <InstructSignUpForm
+        <InstructorSignUpForm
         handleFormSubmit = {handleFormSubmit}
         handleInputChange = {handleInputChange}
         formData = {formData}

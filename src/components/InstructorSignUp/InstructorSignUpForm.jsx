@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaCloudUploadAlt } from "react-icons/fa";
 
-const InstructSignUpForm = ({handleFormSubmit,handleInputChange,formData}) => {
+const InstructorSignUpForm = ({handleFormSubmit,handleInputChange,formData}) => {
   return (
     <div>
         <form onSubmit={handleFormSubmit}>
@@ -133,4 +133,4 @@ const InstructSignUpForm = ({handleFormSubmit,handleInputChange,formData}) => {
   )
 }
 
-export default InstructSignUpForm
+export default InstructorSignUpForm
