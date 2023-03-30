@@ -7,6 +7,7 @@ import { Login } from "./pages/Login/Login";
 import { PaymentDetails } from "./pages/Payment/PaymentDetails";
 import "./App.css";
 import { ForgotPassword } from "./pages/forgot.password/ForgotPassword";
+import InstructorSignUp from "./pages/InstructorSignUp/InstructorSignUp.jsx";
 
 function App() {
   return (
@@ -15,12 +16,13 @@ function App() {
         <Route path="/" element={<Home />} />
 
         <Route path="/signup" element={<Signup />} />
-
-        <Route path="*" element={<NoMatch />} />
+        <Route path="/InstructorSignUp" element={<InstructorSignUp/>}/>
 
         <Route path="/login" element={<Login />} />
         <Route path="/payment" element={<PaymentDetails />} />
         <Route path="/password" element={<ForgotPassword />} />
+
+        <Route path="*" element={<NoMatch />} />
       </Routes>
     </div>
   );
