@@ -6,8 +6,11 @@ import { Login } from "./pages/Login/Login";
 import { PaymentDetails } from "./pages/Payment/PaymentDetails";
 import "./App.css";
 import { ForgotPassword } from "./pages/forgot.password/ForgotPassword";
+
 import ErrorPage from "./instructor/pages/ErrorPage/ErrorPage";
 import Navbar from "./instructor/routes/navigation/navigation";
+
+
 function App() {
   return (
     <div className="App font-poppins">
@@ -15,15 +18,17 @@ function App() {
         <Route path="/" element={<Home />} />
 
         <Route path="/signup" element={<Signup />} />
-
-        <Route path="*" element={<NoMatch />} />
-
         <Route path="/login" element={<Login />} />
         <Route path="/payment" element={<PaymentDetails />} />
         <Route path="/password" element={<ForgotPassword />} />
+
         <Route path="/" element={<Navbar />}>
           <Route path="/page-error" element={<ErrorPage />} />
         </Route>
+
+
+        <Route path="*" element={<NoMatch />} />
+
       </Routes>
     </div>
   );
