@@ -7,9 +7,8 @@ import { PaymentDetails } from "./pages/Payment/PaymentDetails";
 import "./App.css";
 import { ForgotPassword } from "./pages/forgot.password/ForgotPassword";
 
-import ErrorPage from "./instructor/pages/ErrorPage/ErrorPage";
-import Navbar from "./instructor/routes/navigation/navigation";
-
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import Navbar from "./components/navigation/navigation";
 
 function App() {
   return (
@@ -26,9 +25,7 @@ function App() {
           <Route path="/page-error" element={<ErrorPage />} />
         </Route>
 
-
         <Route path="*" element={<NoMatch />} />
-
       </Routes>
     </div>
   );

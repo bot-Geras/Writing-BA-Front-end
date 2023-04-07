@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../../components/Footer";
-import sadImg from "../../../assets/images/instructor/sad.png";
-import jessImg from "../../../assets/images/instructor/jess.png";
+import Footer from "../../components/Footer/Footer";
+import sadImg from "../../assets/images/instructor/sad.png";
+import jessImg from "../../assets/images/instructor/jess.png";
 const ErrorPage = () => {
   return (
     <div className="h-screen flex flex-col ">
