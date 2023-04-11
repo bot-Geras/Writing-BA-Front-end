@@ -1,21 +1,21 @@
 import { NavComponent } from "./Navbar";
 import { NavMobile } from "./Navbar";
-import { Hero } from "./LandingPage";
-import { AboutSection } from "./LandingPage";
-import { Services } from "./LandingPage";
-import { Testimonial } from "./LandingPage";
-import { Subscribe } from "./LandingPage";
-import { Footer } from "./LandingPage";
-import { BackToTop } from "./LandingPage";
+import { Hero } from "./Ielts/index";
+import { AboutSection } from "./Ielts/index";
+import { Services } from "./Ielts/index";
+import { Testimonial } from "./Ielts/index";
+import { Subscribe } from "./Ielts/index";
+import { Footer } from "./Ielts/index";
+import { BackToTop } from "./Ielts/index";
 
-export { 
-    NavComponent,
-    NavMobile,
-    Hero,
-    AboutSection,
-    Services,
-    Testimonial,
-    Subscribe,
-    Footer,
-    BackToTop,
-}
+export {
+  NavComponent,
+  NavMobile,
+  Hero,
+  AboutSection,
+  Services,
+  Testimonial,
+  Subscribe,
+  Footer,
+  BackToTop,
+};
