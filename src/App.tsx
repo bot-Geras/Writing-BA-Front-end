@@ -15,16 +15,17 @@ import Navbar from "./components/navigation/navigation";
 function App() {
   return (
     <div className="App font-poppins">
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/ielts" element={<Ielts />} />
+        <Route path="/" element={<Ielts />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/payment" element={<PaymentDetails />} />
         <Route path="/password" element={<ForgotPassword />} />
         <Route path="/instructor/signup" element={<InstructorSignUp />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="/" element={<Navbar />}>
+          <Route index path="/instructor" element={<Home />} />
+          <Route path="/instructor/*" element={<ErrorPage />} />
+        </Route>
       </Routes>
     </div>
   );
