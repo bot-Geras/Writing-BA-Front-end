@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import { Ielts } from "./pages/Ielts/Ielts";
-//import { NoMatch } from "./pages/Error/NoMatch";
+import { NoMatch } from "./pages/Error/NoMatch";
 import { Signup } from "./pages/Signup/Signup";
 import { Login } from "./pages/Login/Login";
 import { PaymentDetails } from "./pages/Payment/PaymentDetails";
 import "./App.css";
 import { ForgotPassword } from "./pages/forgot.password/ForgotPassword";
-import InstructorSignUp from "./pages/Instructor-SignUp/Instructor-SignUp";
+import InstructorSignUp from "./pages/InstructorPage/SignUpPage/Instructor-SignUp";
 import Home from "./pages/Home/Home";
 
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
@@ -26,7 +26,9 @@ function App() {
           <Route index path="/instructor" element={<Home />} />
           <Route path="/instructor/*" element={<ErrorPage />} />
         </Route>
+        <Route path="*" element={<NoMatch />} />
       </Routes>
+      
     </div>
   );
 }

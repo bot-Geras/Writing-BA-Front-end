@@ -1,7 +1,7 @@
 import React, { useState,lazy, Suspense } from 'react';
-import Banner from '../../assets/images/InstructSignUp.jpg'
+import Banner from '../../../assets/images/InstructSignUp.jpg'
 import './InstructorSignUp.css'
-const LazyInstructorSignUpForm = lazy(() => import('../../components/Instructor-SignUp/Instructor_SignUpForm'));
+const LazyInstructorSignUpForm = lazy(() => import('../../../components/InstructorForms/InstructorSignUpForm'));
 
 const InstructorSignUp = () => {
   const [formData, setFormData] = useState({
