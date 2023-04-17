@@ -11,6 +11,7 @@ import Home from "./pages/Home/Home";
 
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Navbar from "./components/navigation/navigation";
+import InstructorSignIn from "./pages/InstructorPage/SignInPage/InstructorSignIn";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<Navbar />}>
           <Route index path="/instructor" element={<Home />} />
           <Route path="/instructor/*" element={<ErrorPage />} />
+          <Route path="/instructor/signin" element={<InstructorSignIn />} />
         </Route>
         <Route path="*" element={<NoMatch />} />
       </Routes>
