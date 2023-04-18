@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../assets/images/wbaLogo-white.png";
 import { Link, Outlet } from "react-router-dom";
-import Sidebar from "../ErrorPage/Sidebar";
+import Sidebar from "../SideBar/Sidebar";
 const Navbar = () => {
   return (
     <>
