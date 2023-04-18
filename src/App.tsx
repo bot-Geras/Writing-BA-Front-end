@@ -30,7 +30,6 @@ function App() {
         </Route>
         <Route path="*" element={<NoMatch />} />
       </Routes>
-      
     </div>
   );
 }
